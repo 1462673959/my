@@ -26,5 +26,6 @@ public class Test {
 	@org.junit.Test
 	public void f() throws IOException {
 		System.out.println("大家好！");
+		System.out.println("大家好！");
 	}
 }
