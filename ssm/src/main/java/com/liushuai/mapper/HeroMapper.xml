@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 	
+    <mapper namespace="com.liushuai.mapper.HeroMapper">
+    	<resultMap type="Hero" id="heroBean">
+    		<id column="hid" property="id"/>
+    		<result column="name" property="name"/>
+    		<result column="hp" property="hp"/>
+    		<collection property="skills" ofType="HeroSkill">
+    			<id column="sid" property="id" />
+                <result column="sName" property="sName" />
+                <result column="sDescribe" property="sDescribe" />
+                <result column="sKey" property="sKey" />
+                <result column="sTime" property="sTime" />
+                <result column="sValue" property="sValue" />
+    		</collection>
+    	</resultMap>
+        <select id="heros" resultMap="heroBean">
+            select h.*,s.*,s.id 'sid',h.id 'hid' from hero h left join skill_hero s on h.id = s.hId;
+        </select>
+    </mapper>

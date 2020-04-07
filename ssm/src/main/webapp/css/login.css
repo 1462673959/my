@@ -1,0 +1,47 @@
+
+span{
+	width: 3.125rem; 
+	text-align-last:justify;
+	text-align:justify;
+	display: inline-block;
+	font-size: 0.9375rem;
+	font-family: "franklin gothic book";
+	
+}
+#a1{
+	text-align: center;
+	width: 30%;
+}
+li{
+	list-style: none;
+	margin-bottom: 1.25rem;	
+}
+#head{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	border-bottom: #00FFFF 0.0625rem solid;
+	top: 0rem;
+	left: 0rem;
+	background-color: aliceblue;
+}
+#body{
+	width: 100%;
+	text-align: center;
+	padding-top: 6.25rem;
+	margin-top: 1rem;
+}
+#sBtn{
+	width: 12.5rem;
+	background-color: #00FFFF;
+	opacity: 0.3;
+}
+#body-login{
+	margin: 0 auto;
+	width: 50%; 
+	border: solid 0.0625rem #00FFFF;
+	padding-top: 0.625rem;
+}
+
+
+

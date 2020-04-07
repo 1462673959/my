@@ -1,0 +1,22 @@
+@charset "UTF-8";
+a{
+	text-decoration:none;
+	padding-left:100px;
+	padding-right:100px;
+	text-align: center;
+	cursor:pointer;
+	font-size: 20px;
+	border-right: solid 0.2px #000fff;
+	
+}
+nav{
+	position:absolute;
+	border-bottom: solid 2px red;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+}
+#exit{
+	position: absolute;
+	right: 0px;
+}
