@@ -25,6 +25,6 @@ import com.liushuai.util.RedisUtil;
 public class Test {
 	@org.junit.Test
 	public void f() throws IOException {
-		
+		System.out.println("大家好！");
 	}
 }
